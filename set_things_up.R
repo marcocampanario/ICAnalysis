@@ -1,0 +1,6 @@
+usethis::use_git()
+usethis::use_roxygen_md()
+usethis::use_testthat(edition = 3)
+usethis::use_vignette("ICAnalysis")
+usethis::use_readme_rmd()
+usethis::use_news_md()
