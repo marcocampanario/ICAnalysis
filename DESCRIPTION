@@ -1,19 +1,39 @@
 Package: ICAnalysis
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Analysis of Illumina Connected Annotations Variant Data
+Version: 0.99.0
+Date: 2026-08-08
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 8.1.0
-Suggests: 
+    person(
+        "Marco Antonio",
+        "Campanário",
+        email = "macscampanario@gmail.com",
+        role = c("aut", "cre")
+    )
+Description: Provides tools for cohort-level analysis of genetic variant
+    annotations parsed from Illumina Connected Annotations JSON files with
+    AnnoJSON. The package operates on ICAPositions objects and supports
+    allele-level transformation, population-database classification,
+    allele-frequency classification, and clinical annotation summaries.
+License: Artistic-2.0
+URL: https://github.com/marcocampanario/ICAnalysis
+Depends:
+    R (>= 4.6.0)
+Imports:
+    AnnoJSON,
+    DFplyr,
+    dplyr,
+    methods,
+    purrr,
+    S4Vectors,
+    stringr,
+    tidyr
+Suggests:
+    BiocStyle,
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)
-Config/testthat/edition: 3
-VignetteBuilder: knitr
-URL: https://github.com/marcocampanario/ICAnalysis
-BugReports: https://github.com/marcocampanario/ICAnalysis/issues
+BugReports: https://github.com/marcocampanario/ICAnalysis//issues
+biocViews: Software
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.0

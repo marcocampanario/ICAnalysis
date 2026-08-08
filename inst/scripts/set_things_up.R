@@ -1,4 +1,5 @@
-usethis::use_git()
+##
+
 usethis::use_roxygen_md()
 usethis::use_testthat(edition = 3)
 usethis::use_vignette("ICAnalysis")
@@ -24,3 +25,13 @@ gitcreds ::gitcreds_set()
 #Add an SSH key to GitHub
 usethis ::use_github()
 credentials::ssh_setup_github()
+biocthis::use_bioc_description()
+
+##
+packageVersion("AnnoJSON")
+requireNamespace("AnnoJSON", quietly = TRUE)
+
+devtools::document()
+devtools::load_all()
+devtools::test()
+devtools::check()
