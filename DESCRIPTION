@@ -20,6 +20,7 @@ Depends:
     R (>= 4.6.0)
 Imports:
     AnnoJSON,
+    data.table,
     DFplyr,
     dplyr,
     methods,
